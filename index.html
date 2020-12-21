@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+ 
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets\css\style.css">
+    <script src="https://kit.fontawesome.com/aecf06a0a6.js" crossorigin="anonymous"></script>
+    <title>Spotify player</title>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <img src="" class="clip-animation"  alt="">
+            <h1 class="album-name"></h1>
+            <p><span class="track-amount"></span> Songs</p>
+            <div class="btn-box">
+                <i class="fas fa-backward previous"></i>
+                <i class="fas fa-play btn"></i>
+                <i class="fas fa-forward next"></i>
+               
+            </div>
+            <div class="time"> 00:00 - <span class="fulltime"> 00:00 </span> </div>
+
+            <div class="testbox">
+                <label id="minutes">00</label>:<label id="seconds">00</label>
+            </div>
+
+             <progress id="progress" value="0.2"></progress>
+             <div class="volumeBox">          
+                <i class="fas fa-volume-up"></i>
+                <input id="volumeslider" type="range" min="1" max="100" value="100" step="1" onchange="setVolume()"></input>
+            </div>
+        </div>
+  
+        <div class="right">
+            <ul class="list">
+             
+            </ul>
+        </div>
+    </div>
+    
+    
+    <script src="https://sdk.scdn.co/spotify-player.js"></script>
+        <script type="module" src="assets\js\app.js"></script>
+</body>
+   
