@@ -14,22 +14,19 @@
             <img src="" class="clip-animation"  alt="">
             <h1 class="album-name"></h1>
             <p><span class="track-amount"></span> Songs</p>
+            <p class="currentlyPlaying">Currently playing</p>
             <div class="btn-box">
-                <i class="fas fa-backward previous"></i>
+                <!-- <i class="fas fa-backward previous"></i>
                 <i class="fas fa-play btn"></i>
-                <i class="fas fa-forward next"></i>
-               
-            </div>
-            <div class="time"> 00:00 - <span class="fulltime"> 00:00 </span> </div>
-
-            <div class="testbox">
-                <label id="minutes">00</label>:<label id="seconds">00</label>
+                <i class="fas fa-forward next"></i> -->
+                <p class="currentTrack"></p>
             </div>
 
-             <progress id="progress" value="0.2"></progress>
+            <!-- <div class="time"> 00:00 - <span class="fulltime"> 00:00 </span> </div> -->
+             <progress id="progress" class="progress" value="" min="0" max=""></progress>
              <div class="volumeBox">          
                 <i class="fas fa-volume-up"></i>
-                <input id="volumeslider" type="range" min="1" max="100" value="100" step="1" onchange="setVolume()"></input>
+                <input id="volumeslider" class="volumeSlider" type="range" min="1" max="100" value="50"></input>
             </div>
         </div>
   
